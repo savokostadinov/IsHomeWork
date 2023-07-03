@@ -1,0 +1,798 @@
+2023-04-12 15:39:18.5483|0|DEBUG|EShop.Web3.Program|init main 
+2023-04-12 15:39:22.4109|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-04-12 15:39:22.4586|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Savo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-04-12 15:39:22.4742|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Savo\AppData\Local\ASP.NET\DataProtection-Keys\key-be231315-ee46-41e4-a449-20a719ad4ee7.xml'. 
+2023-04-12 15:39:22.4932|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {be231315-ee46-41e4-a449-20a719ad4ee7}. 
+2023-04-12 15:39:22.5087|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {be231315-ee46-41e4-a449-20a719ad4ee7} with expiration date 2023-06-04 13:35:03Z as default key. 
+2023-04-12 15:39:22.5747|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-04-12 15:39:22.5747|51|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-04-12 15:39:22.5747|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-04-12 15:39:22.5747|4|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-04-12 15:39:22.5747|3|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-04-12 15:39:22.5832|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {be231315-ee46-41e4-a449-20a719ad4ee7} as the default key. 
+2023-04-12 15:39:22.5832|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {be231315-ee46-41e4-a449-20a719ad4ee7} was loaded during application startup. 
+2023-04-12 15:39:22.8518|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly EShop.Web3 
+2023-04-12 15:39:22.8518|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-04-12 15:39:22.8518|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-04-12 15:39:22.8518|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-04-12 15:39:22.8518|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-04-12 15:39:22.8518|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3 
+2023-04-12 15:39:22.8518|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-04-12 15:39:22.9161|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/   
+2023-04-12 15:39:22.9462|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-04-12 15:39:22.9462|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:22.9702|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Register.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/AddProductToCard.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Create.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Delete.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Details.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Edit.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Index.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_LoginPartial.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/ShoppingCart/Index.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/AccessDenied.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmail.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ExternalLogin.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPassword.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Lockout.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Login.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWith2fa.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Logout.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Email.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Index.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_Layout.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewStart.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Register.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPassword.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_StatusMessage.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_ViewImports.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Error.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_Layout.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewImports.cshtml'. 
+2023-04-12 15:39:22.9780|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'. 
+2023-04-12 15:39:22.9925|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/' 
+2023-04-12 15:39:22.9925|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2023-04-12 15:39:22.9925|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-04-12 15:39:22.9925|9|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2023-04-12 15:39:22.9925|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-04-12 15:39:23.0052|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider 
+2023-04-12 15:39:23.0491|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller EShop.Web3.Controllers.HomeController (EShop.Web3). 
+2023-04-12 15:39:23.0491|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-04-12 15:39:23.0491|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:23.0491|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-04-12 15:39:23.0491|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-04-12 15:39:23.0491|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:23.0491|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:23.0491|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:23.0507|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EShop.Web3.Controllers.HomeController (EShop.Web3) 
+2023-04-12 15:39:23.0507|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EShop.Web3.Controllers.HomeController (EShop.Web3) 
+2023-04-12 15:39:23.0507|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:23.0507|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:23.0507|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:23.1547|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.HomeController.Index (EShop.Web3) - Validation state: Valid 
+2023-04-12 15:39:23.1547|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EShop.Web3.Controllers.HomeController.Index (EShop.Web3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5081ms. 
+2023-04-12 15:39:23.1547|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:23.1547|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:23.1547|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:23.1547|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:23.1547|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:23.1547|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-04-12 15:39:23.1603|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Home'. 
+2023-04-12 15:39:23.1603|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Home/Index.cshtml'. 
+2023-04-12 15:39:23.1603|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_ViewStart.cshtml'. 
+2023-04-12 15:39:23.1603|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2023-04-12 15:39:23.1603|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2023-04-12 15:39:23.1603|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2023-04-12 15:39:23.1603|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 9.3119ms. 
+2023-04-12 15:39:23.2237|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Home'. 
+2023-04-12 15:39:23.2237|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_Layout.cshtml'. 
+2023-04-12 15:39:23.2237|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2023-04-12 15:39:23.2638|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:23.2638|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-04-12 15:39:23.2638|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-04-12 15:39:23.2701|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_LoginPartial' in controller 'Home'. 
+2023-04-12 15:39:23.2701|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_LoginPartial.cshtml'. 
+2023-04-12 15:39:23.2701|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_LoginPartial.cshtml'. 
+2023-04-12 15:39:23.3925|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2023-04-12 15:39:23.4106|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:23.4106|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-04-12 15:39:23.4106|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-04-12 15:39:23.4106|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:23.4106|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-04-12 15:39:23.4106|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-04-12 15:39:23.4106|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:23.4106|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products and  
+2023-04-12 15:39:23.4106|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products 
+2023-04-12 15:39:23.4106|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:23.4106|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Register and  
+2023-04-12 15:39:23.4106|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Register 
+2023-04-12 15:39:23.4106|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:23.4106|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and  
+2023-04-12 15:39:23.4106|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Login 
+2023-04-12 15:39:23.4106|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:23.4106|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /ShoppingCart and  
+2023-04-12 15:39:23.4106|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /ShoppingCart 
+2023-04-12 15:39:23.4106|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:23.4106|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-04-12 15:39:23.4106|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-04-12 15:39:23.5453|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 385.9496ms. 
+2023-04-12 15:39:23.5453|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-04-12 15:39:23.5453|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:23.5453|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:23.5453|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:23.5453|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:23.5453|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EShop.Web3.Controllers.HomeController.Index (EShop.Web3) in 498.426ms 
+2023-04-12 15:39:23.5453|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-04-12 15:39:23.5624|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-04-12 15:39:23.5771|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-04-12 15:39:23.5883|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 676.0272ms 200 text/html; charset=utf-8 
+2023-04-12 15:39:23.6134|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/css/site.css   
+2023-04-12 15:39:23.6134|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/lib/bootstrap/dist/css/bootstrap.min.css   
+2023-04-12 15:39:23.6137|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:23.6137|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:23.6137|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-04-12 15:39:23.6137|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-04-12 15:39:23.6345|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\wwwroot\css\site.css' 
+2023-04-12 15:39:23.6345|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 21.3341ms 200 text/css 
+2023-04-12 15:39:23.6345|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+2023-04-12 15:39:23.6345|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 28.6554ms 200 text/css 
+2023-04-12 15:39:23.6733|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/lib/jquery/dist/jquery.min.js   
+2023-04-12 15:39:23.6733|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/lib/bootstrap/dist/js/bootstrap.bundle.min.js   
+2023-04-12 15:39:23.6733|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:23.6733|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:23.6733|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-04-12 15:39:23.6733|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-04-12 15:39:23.6733|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_framework/aspnetcore-browser-refresh.js   
+2023-04-12 15:39:23.6733|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_vs/browserLink   
+2023-04-12 15:39:23.6733|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+2023-04-12 15:39:23.6733|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:23.6733|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-04-12 15:39:23.6767|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\wwwroot\js\site.js' 
+2023-04-12 15:39:23.6767|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3.2598ms 200 application/javascript 
+2023-04-12 15:39:23.6767|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 6.4388ms 200 application/javascript; charset=utf-8 
+2023-04-12 15:39:23.6767|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js' 
+2023-04-12 15:39:23.6767|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 7.6665ms 200 application/javascript 
+2023-04-12 15:39:23.6767|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\wwwroot\lib\jquery\dist\jquery.min.js' 
+2023-04-12 15:39:23.6767|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 9.8351ms 200 application/javascript 
+2023-04-12 15:39:23.7687|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 94.7935ms 200 text/javascript; charset=UTF-8 
+2023-04-12 15:39:23.8907|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/favicon.ico   
+2023-04-12 15:39:23.8907|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:23.8907|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-04-12 15:39:23.8907|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\wwwroot\favicon.ico' 
+2023-04-12 15:39:23.8907|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2.8721ms 200 image/x-icon 
+2023-04-12 15:39:26.3997|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/Products   
+2023-04-12 15:39:26.3997|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:26.3997|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Products does not match a supported file type 
+2023-04-12 15:39:26.3997|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Products' 
+2023-04-12 15:39:26.3997|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.ProductsController.Index (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Products' 
+2023-04-12 15:39:26.3997|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EShop.Web3.Controllers.ProductsController.Index (EShop.Web3)' 
+2023-04-12 15:39:26.3997|9|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2023-04-12 15:39:26.3997|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EShop.Web3.Controllers.ProductsController.Index (EShop.Web3)' 
+2023-04-12 15:39:26.3997|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Products", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller EShop.Web3.Controllers.ProductsController (EShop.Web3). 
+2023-04-12 15:39:26.3997|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-04-12 15:39:26.3997|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:26.3997|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-04-12 15:39:26.3997|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-04-12 15:39:26.3997|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:26.3997|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:26.3997|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:26.3997|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EShop.Web3.Controllers.ProductsController (EShop.Web3) 
+2023-04-12 15:39:26.7746|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2023-04-12 15:39:26.7746|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2023-04-12 15:39:26.8540|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2023-04-12 15:39:26.8540|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EShop.Web3.Controllers.ProductsController (EShop.Web3) 
+2023-04-12 15:39:26.8540|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:26.8540|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:26.8540|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:26.8687|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.ProductsController.Index (EShop.Web3) - Validation state: Valid 
+2023-04-12 15:39:26.8687|0|INFO|EShop.Services.Implementation.ProductService|GetAllProducts was called! 
+2023-04-12 15:39:26.9648|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<Product>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Product>, 
+    EShop.Repository.ApplicationDbContext, 
+    null
+) 
+2023-04-12 15:39:26.9805|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-04-12 15:39:27.0257|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (44ms). 
+2023-04-12 15:39:27.0257|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:29.2939|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:29.2939|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[ProductDescription], [p].[ProductImage], [p].[ProductName], [p].[ProductPrice], [p].[Rating]
+FROM [Products] AS [p] 
+2023-04-12 15:39:29.3555|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[ProductDescription], [p].[ProductImage], [p].[ProductName], [p].[ProductPrice], [p].[Rating]
+FROM [Products] AS [p] 
+2023-04-12 15:39:29.3845|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:29.4042|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:29.4042|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:29.4042|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-04-12 15:39:29.4042|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:29.4139|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:29.4139|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EShop.Web3.Controllers.ProductsController.Index (EShop.Web3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2548.5057ms. 
+2023-04-12 15:39:29.4139|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:29.4139|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:29.4139|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:29.4139|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:29.4139|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:29.4139|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-04-12 15:39:29.4139|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Products'. 
+2023-04-12 15:39:29.4139|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Products/Index.cshtml'. 
+2023-04-12 15:39:29.4139|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Products/_ViewStart.cshtml'. 
+2023-04-12 15:39:29.4139|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2023-04-12 15:39:29.4139|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2023-04-12 15:39:29.4139|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2023-04-12 15:39:29.4139|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Products/Index.cshtml' was found in 0.9295ms. 
+2023-04-12 15:39:29.4139|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4139|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Create and  
+2023-04-12 15:39:29.4139|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Create 
+2023-04-12 15:39:29.4139|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4139|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/AddProductToCard/208c0101-d4eb-4788-83ae-08db2ea2c0a5 and  
+2023-04-12 15:39:29.4139|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/AddProductToCard/208c0101-d4eb-4788-83ae-08db2ea2c0a5 
+2023-04-12 15:39:29.4139|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4139|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Edit and ?pId=208c0101-d4eb-4788-83ae-08db2ea2c0a5 
+2023-04-12 15:39:29.4139|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Edit?pId=208c0101-d4eb-4788-83ae-08db2ea2c0a5 
+2023-04-12 15:39:29.4139|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4139|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Delete/208c0101-d4eb-4788-83ae-08db2ea2c0a5 and  
+2023-04-12 15:39:29.4139|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Delete/208c0101-d4eb-4788-83ae-08db2ea2c0a5 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/AddProductToCard/ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/AddProductToCard/ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Edit and ?pId=ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Edit?pId=ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Delete/ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Delete/ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/AddProductToCard/8ac5009b-5b73-47f3-29a3-08db2ea43634 and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/AddProductToCard/8ac5009b-5b73-47f3-29a3-08db2ea43634 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Edit and ?pId=8ac5009b-5b73-47f3-29a3-08db2ea43634 
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Edit?pId=8ac5009b-5b73-47f3-29a3-08db2ea43634 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Delete/8ac5009b-5b73-47f3-29a3-08db2ea43634 and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Delete/8ac5009b-5b73-47f3-29a3-08db2ea43634 
+2023-04-12 15:39:29.4258|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-04-12 15:39:29.4258|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_LoginPartial' in controller 'Products'. 
+2023-04-12 15:39:29.4258|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Products/_LoginPartial.cshtml'. 
+2023-04-12 15:39:29.4258|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_LoginPartial.cshtml'. 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Register and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Register 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Login 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /ShoppingCart and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /ShoppingCart 
+2023-04-12 15:39:29.4258|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:29.4258|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-04-12 15:39:29.4258|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-04-12 15:39:29.4258|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 16.8604ms. 
+2023-04-12 15:39:29.4258|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-04-12 15:39:29.4258|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:29.4258|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:29.4258|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:29.4258|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:29.4258|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EShop.Web3.Controllers.ProductsController.Index (EShop.Web3) in 3024.5761ms 
+2023-04-12 15:39:29.4258|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EShop.Web3.Controllers.ProductsController.Index (EShop.Web3)' 
+2023-04-12 15:39:29.4258|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-04-12 15:39:29.4258|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-04-12 15:39:29.4258|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2023-04-12 15:39:29.4258|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3040.7517ms 200 text/html; charset=utf-8 
+2023-04-12 15:39:29.4937|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_framework/aspnetcore-browser-refresh.js   
+2023-04-12 15:39:29.4937|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 0.5749ms 200 application/javascript; charset=utf-8 
+2023-04-12 15:39:29.4937|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_vs/browserLink   
+2023-04-12 15:39:29.5053|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 10.7613ms 200 text/javascript; charset=UTF-8 
+2023-04-12 15:39:44.5171|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/Products/Edit?pId=8ac5009b-5b73-47f3-29a3-08db2ea43634   
+2023-04-12 15:39:44.5171|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:44.5200|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Products/Edit does not match a supported file type 
+2023-04-12 15:39:44.5200|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Products/Edit' 
+2023-04-12 15:39:44.5200|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Products/Edit' 
+2023-04-12 15:39:44.5200|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' 
+2023-04-12 15:39:44.5200|9|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2023-04-12 15:39:44.5200|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' 
+2023-04-12 15:39:44.5445|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Edit", controller = "Products", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Edit(System.Nullable`1[System.Guid]) on controller EShop.Web3.Controllers.ProductsController (EShop.Web3). 
+2023-04-12 15:39:44.5445|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-04-12 15:39:44.5445|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:44.5445|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-04-12 15:39:44.5445|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-04-12 15:39:44.5445|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:44.5445|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:44.5445|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:44.5445|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EShop.Web3.Controllers.ProductsController (EShop.Web3) 
+2023-04-12 15:39:44.5690|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2023-04-12 15:39:44.5690|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EShop.Web3.Controllers.ProductsController (EShop.Web3) 
+2023-04-12 15:39:44.5690|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'pId' of type 'System.Nullable`1[System.Guid]' ... 
+2023-04-12 15:39:44.5690|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'pId' of type 'System.Nullable`1[System.Guid]' using the name 'pId' in request data ... 
+2023-04-12 15:39:44.5827|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'pId' of type 'System.Nullable`1[System.Guid]'. 
+2023-04-12 15:39:44.5827|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'pId' of type 'System.Nullable`1[System.Guid]'. 
+2023-04-12 15:39:44.5827|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'pId' of type 'System.Nullable`1[System.Guid]' ... 
+2023-04-12 15:39:44.5827|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'pId' of type 'System.Nullable`1[System.Guid]'. 
+2023-04-12 15:39:44.5827|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:44.5827|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:44.5827|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:44.6015|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3) - Validation state: Valid 
+2023-04-12 15:39:44.6015|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3) with arguments (8ac5009b-5b73-47f3-29a3-08db2ea43634) 
+2023-04-12 15:39:44.6841|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<Product>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Product>, 
+    EShop.Repository.ApplicationDbContext, 
+    null
+)
+    .SingleOrDefault() 
+2023-04-12 15:39:44.6841|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-04-12 15:39:44.6916|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (1ms). 
+2023-04-12 15:39:44.6916|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:44.6916|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:44.6916|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[ProductDescription], [p].[ProductImage], [p].[ProductName], [p].[ProductPrice], [p].[Rating]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__id_0 
+2023-04-12 15:39:44.7555|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (60ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[ProductDescription], [p].[ProductImage], [p].[ProductName], [p].[ProductPrice], [p].[Rating]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__id_0 
+2023-04-12 15:39:44.7555|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:44.7555|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-04-12 15:39:44.7555|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:44.7555|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:44.7555|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 155.7218ms. 
+2023-04-12 15:39:44.7555|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:44.7555|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:44.7555|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:44.7555|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:44.7555|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:44.7555|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-04-12 15:39:44.7555|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Edit' in controller 'Products'. 
+2023-04-12 15:39:44.7555|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Products/Edit.cshtml'. 
+2023-04-12 15:39:44.7555|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Products/_ViewStart.cshtml'. 
+2023-04-12 15:39:44.7555|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2023-04-12 15:39:44.7555|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2023-04-12 15:39:44.7555|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Edit. 
+2023-04-12 15:39:44.7555|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Products/Edit.cshtml' was found in 0.749ms. 
+2023-04-12 15:39:44.7555|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.7555|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Edit and  
+2023-04-12 15:39:44.7555|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Edit 
+2023-04-12 15:39:44.7555|31|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2023-04-12 15:39:44.7555|31|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2023-04-12 15:39:44.7717|5|DEBUG|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|A new antiforgery cookie token was created. 
+2023-04-12 15:39:44.8130|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8130|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products and  
+2023-04-12 15:39:44.8130|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products 
+2023-04-12 15:39:44.8130|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8130|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-04-12 15:39:44.8130|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-04-12 15:39:44.8130|2|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_LoginPartial' in controller 'Products'. 
+2023-04-12 15:39:44.8196|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8196|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-04-12 15:39:44.8196|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-04-12 15:39:44.8196|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8196|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-04-12 15:39:44.8196|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-04-12 15:39:44.8196|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8196|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products and  
+2023-04-12 15:39:44.8196|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products 
+2023-04-12 15:39:44.8196|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8196|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Register and  
+2023-04-12 15:39:44.8196|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Register 
+2023-04-12 15:39:44.8196|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8196|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and  
+2023-04-12 15:39:44.8196|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Login 
+2023-04-12 15:39:44.8196|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8196|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /ShoppingCart and  
+2023-04-12 15:39:44.8196|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /ShoppingCart 
+2023-04-12 15:39:44.8196|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:44.8196|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-04-12 15:39:44.8196|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-04-12 15:39:44.8196|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_ValidationScriptsPartial' in controller 'Products'. 
+2023-04-12 15:39:44.8196|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Products/_ValidationScriptsPartial.cshtml'. 
+2023-04-12 15:39:44.8196|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2023-04-12 15:39:44.8425|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Edit executed in 84.6851ms. 
+2023-04-12 15:39:44.8425|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-04-12 15:39:44.8425|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:44.8425|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:44.8425|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:44.8425|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:44.8425|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3) in 297.9778ms 
+2023-04-12 15:39:44.8425|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' 
+2023-04-12 15:39:44.8425|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-04-12 15:39:44.8425|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-04-12 15:39:44.8425|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2023-04-12 15:39:44.8425|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 328.6872ms 200 text/html; charset=utf-8 
+2023-04-12 15:39:44.8604|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_framework/aspnetcore-browser-refresh.js   
+2023-04-12 15:39:44.8604|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js   
+2023-04-12 15:39:44.8604|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/lib/jquery-validation/dist/jquery.validate.min.js   
+2023-04-12 15:39:44.8604|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:44.8604|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 0.399ms 200 application/javascript; charset=utf-8 
+2023-04-12 15:39:44.8604|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:44.8604|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-04-12 15:39:44.8604|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-04-12 15:39:44.8604|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js' 
+2023-04-12 15:39:44.8604|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2.4226ms 200 application/javascript 
+2023-04-12 15:39:44.8604|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js' 
+2023-04-12 15:39:44.8604|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3.1285ms 200 application/javascript 
+2023-04-12 15:39:44.8874|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_vs/browserLink   
+2023-04-12 15:39:44.9059|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 18.5012ms 200 text/javascript; charset=UTF-8 
+2023-04-12 15:39:46.5188|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44360/Products/Edit application/x-www-form-urlencoded 422 
+2023-04-12 15:39:46.5247|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:46.5247|1|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-04-12 15:39:46.5247|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|2 candidate(s) found for the request path '/Products/Edit' 
+2023-04-12 15:39:46.5247|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Products/Edit' 
+2023-04-12 15:39:46.5247|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Products/Edit' 
+2023-04-12 15:39:46.5247|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' 
+2023-04-12 15:39:46.5247|9|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2023-04-12 15:39:46.5247|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' 
+2023-04-12 15:39:46.5410|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Edit", controller = "Products", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Edit(System.Guid, EShop.Domain.DomainModels.Product) on controller EShop.Web3.Controllers.ProductsController (EShop.Web3). 
+2023-04-12 15:39:46.5410|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter 
+2023-04-12 15:39:46.5410|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:46.5410|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-04-12 15:39:46.5410|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-04-12 15:39:46.5410|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:46.5410|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Authorization Filter: Before executing OnAuthorizationAsync on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter. 
+2023-04-12 15:39:46.5522|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2023-04-12 15:39:46.5522|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2023-04-12 15:39:46.5522|2|DEBUG|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|Antiforgery successfully validated a request. 
+2023-04-12 15:39:46.5522|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Authorization Filter: After executing OnAuthorizationAsync on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter. 
+2023-04-12 15:39:46.5522|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.5522|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.5522|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EShop.Web3.Controllers.ProductsController (EShop.Web3) 
+2023-04-12 15:39:46.5522|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2023-04-12 15:39:46.5522|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EShop.Web3.Controllers.ProductsController (EShop.Web3) 
+2023-04-12 15:39:46.5522|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Guid' ... 
+2023-04-12 15:39:46.5522|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ... 
+2023-04-12 15:39:46.5522|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Guid'. 
+2023-04-12 15:39:46.5522|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Guid'. 
+2023-04-12 15:39:46.5522|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Guid' ... 
+2023-04-12 15:39:46.5522|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Guid'. 
+2023-04-12 15:39:46.5522|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'product' of type 'EShop.Domain.DomainModels.Product' ... 
+2023-04-12 15:39:46.5522|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder|Attempting to bind parameter 'product' of type 'EShop.Domain.DomainModels.Product' using the name '' in request data ... 
+2023-04-12 15:39:46.5522|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'EShop.Domain.DomainModels.Product.ProductName' of type 'System.String' using the name 'ProductName' in request data ... 
+2023-04-12 15:39:46.5522|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'EShop.Domain.DomainModels.Product.ProductName' of type 'System.String'. 
+2023-04-12 15:39:46.5522|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'EShop.Domain.DomainModels.Product.ProductImage' of type 'System.String' using the name 'ProductImage' in request data ... 
+2023-04-12 15:39:46.5522|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'EShop.Domain.DomainModels.Product.ProductImage' of type 'System.String'. 
+2023-04-12 15:39:46.5522|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'EShop.Domain.DomainModels.Product.ProductDescription' of type 'System.String' using the name 'ProductDescription' in request data ... 
+2023-04-12 15:39:46.5522|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'EShop.Domain.DomainModels.Product.ProductDescription' of type 'System.String'. 
+2023-04-12 15:39:46.5522|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'EShop.Domain.DomainModels.Product.ProductPrice' of type 'System.Int32' using the name 'ProductPrice' in request data ... 
+2023-04-12 15:39:46.5522|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'EShop.Domain.DomainModels.Product.ProductPrice' of type 'System.Int32'. 
+2023-04-12 15:39:46.5522|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'EShop.Domain.DomainModels.Product.Rating' of type 'System.Int32' using the name 'Rating' in request data ... 
+2023-04-12 15:39:46.5522|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'EShop.Domain.DomainModels.Product.Rating' of type 'System.Int32'. 
+2023-04-12 15:39:46.5522|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'EShop.Domain.DomainModels.Product.Id' of type 'System.Guid' using the name 'Id' in request data ... 
+2023-04-12 15:39:46.5522|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'EShop.Domain.DomainModels.Product.Id' of type 'System.Guid'. 
+2023-04-12 15:39:46.5522|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder|Done attempting to bind parameter 'product' of type 'EShop.Domain.DomainModels.Product'. 
+2023-04-12 15:39:46.5522|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'product' of type 'EShop.Domain.DomainModels.Product'. 
+2023-04-12 15:39:46.5522|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'product' of type 'EShop.Domain.DomainModels.Product' ... 
+2023-04-12 15:39:46.5695|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'product' of type 'EShop.Domain.DomainModels.Product'. 
+2023-04-12 15:39:46.5695|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:46.5695|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:46.5695|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:46.5844|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3) - Validation state: Valid 
+2023-04-12 15:39:46.5844|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3) with arguments (8ac5009b-5b73-47f3-29a3-08db2ea43634, EShop.Domain.DomainModels.Product) 
+2023-04-12 15:39:46.6036|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:46.6036|10004|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'ApplicationDbContext'. 
+2023-04-12 15:39:46.6036|10800|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ApplicationDbContext'. 
+2023-04-12 15:39:46.6036|10801|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ApplicationDbContext'. 
+2023-04-12 15:39:46.6191|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:46.6191|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:46.6191|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2023-04-12 15:39:46.6191|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2023-04-12 15:39:46.7436|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-04-12 15:39:46.7436|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2023-04-12 15:39:46.7436|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Products] SET [ProductDescription] = @p0, [ProductImage] = @p1, [ProductName] = @p2, [ProductPrice] = @p3, [Rating] = @p4
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT; 
+2023-04-12 15:39:46.7696|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Products] SET [ProductDescription] = @p0, [ProductImage] = @p1, [ProductName] = @p2, [ProductPrice] = @p3, [Rating] = @p4
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT; 
+2023-04-12 15:39:46.7696|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-04-12 15:39:46.7696|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-04-12 15:39:46.7696|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-04-12 15:39:46.7696|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:46.7696|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:46.7696|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2023-04-12 15:39:46.7696|10807|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An 'Product' entity tracked by 'ApplicationDbContext' changed from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:46.7696|10005|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database. 
+2023-04-12 15:39:46.7696|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 196.8123ms. 
+2023-04-12 15:39:46.7696|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:46.7696|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:46.7696|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:46.7696|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.7696|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.7696|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.RedirectToActionResult. 
+2023-04-12 15:39:46.7696|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.7696|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products and  
+2023-04-12 15:39:46.7696|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products 
+2023-04-12 15:39:46.7696|1|INFO|Microsoft.AspNetCore.Mvc.RedirectToActionResult|Executing RedirectResult, redirecting to /Products. 
+2023-04-12 15:39:46.7696|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.RedirectToActionResult. 
+2023-04-12 15:39:46.7696|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.7696|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.7696|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.7696|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.7696|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3) in 241.9637ms 
+2023-04-12 15:39:46.7696|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EShop.Web3.Controllers.ProductsController.Edit (EShop.Web3)' 
+2023-04-12 15:39:46.7696|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2023-04-12 15:39:46.7865|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 268.3228ms 302  
+2023-04-12 15:39:46.7865|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/Products   
+2023-04-12 15:39:46.7865|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:46.7865|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Products does not match a supported file type 
+2023-04-12 15:39:46.7865|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Products' 
+2023-04-12 15:39:46.7865|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.ProductsController.Index (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Products' 
+2023-04-12 15:39:46.7865|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EShop.Web3.Controllers.ProductsController.Index (EShop.Web3)' 
+2023-04-12 15:39:46.7865|9|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2023-04-12 15:39:46.7865|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EShop.Web3.Controllers.ProductsController.Index (EShop.Web3)' 
+2023-04-12 15:39:46.7865|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Products", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller EShop.Web3.Controllers.ProductsController (EShop.Web3). 
+2023-04-12 15:39:46.7865|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-04-12 15:39:46.7865|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:46.7865|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-04-12 15:39:46.7865|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-04-12 15:39:46.7865|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:46.7865|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.7865|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.7865|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EShop.Web3.Controllers.ProductsController (EShop.Web3) 
+2023-04-12 15:39:46.7865|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2023-04-12 15:39:46.7865|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EShop.Web3.Controllers.ProductsController (EShop.Web3) 
+2023-04-12 15:39:46.7865|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:46.7865|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:46.7865|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:46.8085|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.ProductsController.Index (EShop.Web3) - Validation state: Valid 
+2023-04-12 15:39:46.8085|0|INFO|EShop.Services.Implementation.ProductService|GetAllProducts was called! 
+2023-04-12 15:39:46.8085|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-04-12 15:39:46.8085|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2023-04-12 15:39:46.8085|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:46.8085|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:46.8085|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[ProductDescription], [p].[ProductImage], [p].[ProductName], [p].[ProductPrice], [p].[Rating]
+FROM [Products] AS [p] 
+2023-04-12 15:39:46.8085|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[ProductDescription], [p].[ProductImage], [p].[ProductName], [p].[ProductPrice], [p].[Rating]
+FROM [Products] AS [p] 
+2023-04-12 15:39:46.8085|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:46.8085|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:46.8085|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-04-12 15:39:46.8085|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-04-12 15:39:46.8085|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:46.8085|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:46.8085|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EShop.Web3.Controllers.ProductsController.Index (EShop.Web3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.9839ms. 
+2023-04-12 15:39:46.8085|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:46.8085|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:46.8085|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:46.8085|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.8085|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.8085|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-04-12 15:39:46.8085|2|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'Index' in controller 'Products'. 
+2023-04-12 15:39:46.8085|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2023-04-12 15:39:46.8085|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Products/Index.cshtml' was found in 0.1381ms. 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Create and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Create 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/AddProductToCard/208c0101-d4eb-4788-83ae-08db2ea2c0a5 and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/AddProductToCard/208c0101-d4eb-4788-83ae-08db2ea2c0a5 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Edit and ?pId=208c0101-d4eb-4788-83ae-08db2ea2c0a5 
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Edit?pId=208c0101-d4eb-4788-83ae-08db2ea2c0a5 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Delete/208c0101-d4eb-4788-83ae-08db2ea2c0a5 and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Delete/208c0101-d4eb-4788-83ae-08db2ea2c0a5 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/AddProductToCard/ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/AddProductToCard/ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Edit and ?pId=ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Edit?pId=ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Delete/ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Delete/ae8d7f7a-4f3b-4704-83af-08db2ea2c0a5 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/AddProductToCard/8ac5009b-5b73-47f3-29a3-08db2ea43634 and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/AddProductToCard/8ac5009b-5b73-47f3-29a3-08db2ea43634 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Edit and ?pId=8ac5009b-5b73-47f3-29a3-08db2ea43634 
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Edit?pId=8ac5009b-5b73-47f3-29a3-08db2ea43634 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products/Delete/8ac5009b-5b73-47f3-29a3-08db2ea43634 and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products/Delete/8ac5009b-5b73-47f3-29a3-08db2ea43634 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-04-12 15:39:46.8085|2|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_LoginPartial' in controller 'Products'. 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Register and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Register 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Login 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /ShoppingCart and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /ShoppingCart 
+2023-04-12 15:39:46.8085|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-04-12 15:39:46.8085|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-04-12 15:39:46.8085|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-04-12 15:39:46.8222|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 10.4044ms. 
+2023-04-12 15:39:46.8222|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-04-12 15:39:46.8222|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.8222|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.8222|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.8222|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:46.8222|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EShop.Web3.Controllers.ProductsController.Index (EShop.Web3) in 31.7727ms 
+2023-04-12 15:39:46.8222|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EShop.Web3.Controllers.ProductsController.Index (EShop.Web3)' 
+2023-04-12 15:39:46.8222|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-04-12 15:39:46.8222|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-04-12 15:39:46.8222|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2023-04-12 15:39:46.8222|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 35.0399ms 200 text/html; charset=utf-8 
+2023-04-12 15:39:46.8630|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_framework/aspnetcore-browser-refresh.js   
+2023-04-12 15:39:46.8630|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_vs/browserLink   
+2023-04-12 15:39:46.8637|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 0.6483ms 200 application/javascript; charset=utf-8 
+2023-04-12 15:39:46.8637|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13.5573ms 200 text/javascript; charset=UTF-8 
+2023-04-12 15:39:49.0438|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/ShoppingCart   
+2023-04-12 15:39:49.0438|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-04-12 15:39:49.0438|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /ShoppingCart does not match a supported file type 
+2023-04-12 15:39:49.0438|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ShoppingCart' 
+2023-04-12 15:39:49.0438|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.ShoppingCartController.Index (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/ShoppingCart' 
+2023-04-12 15:39:49.0438|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EShop.Web3.Controllers.ShoppingCartController.Index (EShop.Web3)' 
+2023-04-12 15:39:49.0438|9|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2023-04-12 15:39:49.0438|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EShop.Web3.Controllers.ShoppingCartController.Index (EShop.Web3)' 
+2023-04-12 15:39:49.0518|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "ShoppingCart", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller EShop.Web3.Controllers.ShoppingCartController (EShop.Web3). 
+2023-04-12 15:39:49.0518|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-04-12 15:39:49.0518|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:49.0518|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-04-12 15:39:49.0518|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-04-12 15:39:49.0518|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-04-12 15:39:49.0518|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:49.0518|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:39:49.0518|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EShop.Web3.Controllers.ShoppingCartController (EShop.Web3) 
+2023-04-12 15:39:49.0518|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2023-04-12 15:39:49.0518|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EShop.Web3.Controllers.ShoppingCartController (EShop.Web3) 
+2023-04-12 15:39:49.0518|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:39:49.0518|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:49.0518|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:39:49.0679|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.ShoppingCartController.Index (EShop.Web3) - Validation state: Valid 
+2023-04-12 15:39:49.1419|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<EShopApplicationUser3>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, EShopApplicationUser3>, 
+    EShop.Repository.ApplicationDbContext, 
+    null
+)
+    .SingleOrDefault() 
+2023-04-12 15:39:49.1419|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-04-12 15:39:49.1419|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2023-04-12 15:39:49.1419|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:49.1451|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:49.1451|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[Address], [t].[ConcurrencyStamp], [t].[Email], [t].[EmailConfirmed], [t].[FirstName], [t].[LastName], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[Id0], [t].[OwnerId], [t0].[Id], [t0].[ProductId], [t0].[Quantity], [t0].[ShoppingCartId], [t0].[Id0], [t0].[ProductDescription], [t0].[ProductImage], [t0].[ProductName], [t0].[ProductPrice], [t0].[Rating]
+FROM (
+    SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [s].[Id] AS [Id0], [s].[OwnerId]
+    FROM [AspNetUsers] AS [a]
+    LEFT JOIN [ShoppingCarts] AS [s] ON [a].[Id] = [s].[OwnerId]
+    WHERE CAST(0 AS bit) = CAST(1 AS bit)
+) AS [t]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[ProductId], [p].[Quantity], [p].[ShoppingCartId], [p0].[Id] AS [Id0], [p0].[ProductDescription], [p0].[ProductImage], [p0].[ProductName], [p0].[ProductPrice], [p0].[Rating]
+    FROM [ProductInShoppingCarts] AS [p]
+    INNER JOIN [Products] AS [p0] ON [p].[ShoppingCartId] = [p0].[Id]
+) AS [t0] ON [t].[Id0] = [t0].[ProductId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0] 
+2023-04-12 15:39:49.1704|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[Address], [t].[ConcurrencyStamp], [t].[Email], [t].[EmailConfirmed], [t].[FirstName], [t].[LastName], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[Id0], [t].[OwnerId], [t0].[Id], [t0].[ProductId], [t0].[Quantity], [t0].[ShoppingCartId], [t0].[Id0], [t0].[ProductDescription], [t0].[ProductImage], [t0].[ProductName], [t0].[ProductPrice], [t0].[Rating]
+FROM (
+    SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [s].[Id] AS [Id0], [s].[OwnerId]
+    FROM [AspNetUsers] AS [a]
+    LEFT JOIN [ShoppingCarts] AS [s] ON [a].[Id] = [s].[OwnerId]
+    WHERE CAST(0 AS bit) = CAST(1 AS bit)
+) AS [t]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[ProductId], [p].[Quantity], [p].[ShoppingCartId], [p0].[Id] AS [Id0], [p0].[ProductDescription], [p0].[ProductImage], [p0].[ProductName], [p0].[ProductPrice], [p0].[Rating]
+    FROM [ProductInShoppingCarts] AS [p]
+    INNER JOIN [Products] AS [p0] ON [p].[ShoppingCartId] = [p0].[Id]
+) AS [t0] ON [t].[Id0] = [t0].[ProductId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0] 
+2023-04-12 15:39:49.1704|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-04-12 15:39:49.1704|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:39:49.1704|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-04-12 15:40:02.4541|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:40:02.4541|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-04-12 15:40:02.4541|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-04-12 15:40:02.4541|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:40:02.4541|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-04-12 15:40:02.4541|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EShop.Web3.Controllers.ShoppingCartController.Index (EShop.Web3) in 13403.5841ms 
+2023-04-12 15:40:02.4541|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EShop.Web3.Controllers.ShoppingCartController.Index (EShop.Web3)' 
+2023-04-12 15:40:02.4587|1|DEBUG|Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware|System.NullReferenceException occurred, checking if Entity Framework recorded this exception as resulting from a failed database operation. 
+2023-04-12 15:40:02.4587|2|DEBUG|Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware|Entity Framework did not record any exceptions due to failed database operations. This means the current exception is not a failed Entity Framework database operation, or the current exception occurred from a DbContext that was not obtained from request services. 
+2023-04-12 15:40:02.4587|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at EShop.Services.Implementation.ShoppingCartService.getShoppingCartInfo(String userId) in C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Services\Implementation\ShoppingCartService.cs:line 50
+   at EShop.Web3.Controllers.ShoppingCartController.Index() in C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3\Controllers\ShoppingCartController.cs:line 32
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-12 15:40:02.5689|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-04-12 15:40:02.5689|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-04-12 15:40:02.5689|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2023-04-12 15:40:02.5689|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13535.6797ms 500 text/html; charset=utf-8 
+2023-04-12 15:40:02.5901|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_vs/browserLink   
+2023-04-12 15:40:02.5901|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_framework/aspnetcore-browser-refresh.js   
+2023-04-12 15:40:02.5901|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 0.735ms 200 application/javascript; charset=utf-8 
+2023-04-12 15:40:02.6047|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 14.652ms 200 text/javascript; charset=UTF-8 

@@ -1,0 +1,966 @@
+2023-05-24 00:17:35.1340|0|DEBUG|EShop.Web3.Program|init main 
+2023-05-24 00:17:39.8110|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-05-24 00:17:39.8680|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Savo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-05-24 00:17:39.8827|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Savo\AppData\Local\ASP.NET\DataProtection-Keys\key-be231315-ee46-41e4-a449-20a719ad4ee7.xml'. 
+2023-05-24 00:17:39.8988|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {be231315-ee46-41e4-a449-20a719ad4ee7}. 
+2023-05-24 00:17:39.9208|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {be231315-ee46-41e4-a449-20a719ad4ee7} with expiration date 2023-06-04 13:35:03Z as default key. 
+2023-05-24 00:17:39.9888|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-05-24 00:17:39.9888|51|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-05-24 00:17:39.9888|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-05-24 00:17:39.9888|4|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-05-24 00:17:39.9888|3|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-05-24 00:17:39.9888|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {be231315-ee46-41e4-a449-20a719ad4ee7} as the default key. 
+2023-05-24 00:17:39.9888|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {be231315-ee46-41e4-a449-20a719ad4ee7} was loaded during application startup. 
+2023-05-24 00:17:40.3933|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly EShop.Web3 
+2023-05-24 00:17:40.3933|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-05-24 00:17:40.3933|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-05-24 00:17:40.3933|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-05-24 00:17:40.3933|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-05-24 00:17:40.3933|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3 
+2023-05-24 00:17:40.3933|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-05-24 00:17:40.4669|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/   
+2023-05-24 00:17:40.4994|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-05-24 00:17:40.4994|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-05-24 00:17:40.5227|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Register.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/AddProductToCard.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Create.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Delete.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Details.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Edit.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Products/Index.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_LoginPartial.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/ShoppingCart/Index.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/AccessDenied.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmail.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ExternalLogin.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPassword.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Lockout.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Login.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWith2fa.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Logout.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Email.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Index.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_Layout.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewStart.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Register.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPassword.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_StatusMessage.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_ViewImports.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Error.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_Layout.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewImports.cshtml'. 
+2023-05-24 00:17:40.5227|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'. 
+2023-05-24 00:17:40.5481|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/' 
+2023-05-24 00:17:40.5528|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2023-05-24 00:17:40.5528|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-05-24 00:17:40.5791|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2023-05-24 00:17:40.7099|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2023-05-24 00:17:41.1072|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2023-05-24 00:17:41.1072|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2023-05-24 00:17:41.1969|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2023-05-24 00:17:41.3558|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<EShopApplicationUser3>(
+    asyncEnumerable: new QueryingEnumerable<EShopApplicationUser3>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache, 
+        null, 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, EShopApplicationUser3>, 
+        EShop.Repository.ApplicationDbContext, 
+        null
+    ), 
+    cancellationToken: queryContext.CancellationToken) 
+2023-05-24 00:17:41.3816|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-05-24 00:17:41.4225|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (42ms). 
+2023-05-24 00:17:41.4282|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-05-24 00:17:43.1315|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-05-24 00:17:43.1455|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0 
+2023-05-24 00:17:43.2716|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (132ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0 
+2023-05-24 00:17:43.3189|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'EShopApplicationUser3' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-05-24 00:17:43.3531|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-05-24 00:17:43.3531|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-05-24 00:17:43.3641|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-05-24 00:17:43.3959|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Claim>, 
+    EShop.Repository.ApplicationDbContext, 
+    null
+) 
+2023-05-24 00:17:43.3959|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-05-24 00:17:43.3959|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2023-05-24 00:17:43.3959|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-05-24 00:17:43.3959|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-05-24 00:17:43.3959|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0 
+2023-05-24 00:17:43.3959|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0 
+2023-05-24 00:17:43.4132|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-05-24 00:17:43.4132|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-05-24 00:17:43.4132|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-05-24 00:17:43.4132|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server '(localdb)\mssqllocaldb'. 
+2023-05-24 00:17:43.4132|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2023-05-24 00:17:43.4132|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-05-24 00:17:43.4260|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider 
+2023-05-24 00:17:43.4478|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller EShop.Web3.Controllers.HomeController (EShop.Web3). 
+2023-05-24 00:17:43.4478|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-05-24 00:17:43.4478|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-05-24 00:17:43.4478|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-05-24 00:17:43.4478|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-05-24 00:17:43.4478|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-05-24 00:17:43.4478|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:17:43.4478|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:17:43.4478|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EShop.Web3.Controllers.HomeController (EShop.Web3) 
+2023-05-24 00:17:43.4478|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EShop.Web3.Controllers.HomeController (EShop.Web3) 
+2023-05-24 00:17:43.4478|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-05-24 00:17:43.4478|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-05-24 00:17:43.4478|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-05-24 00:17:43.6412|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.HomeController.Index (EShop.Web3) - Validation state: Valid 
+2023-05-24 00:17:43.6436|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EShop.Web3.Controllers.HomeController.Index (EShop.Web3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5712ms. 
+2023-05-24 00:17:43.6436|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-05-24 00:17:43.6436|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-05-24 00:17:43.6436|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-05-24 00:17:43.6436|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:17:43.6436|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:17:43.6436|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-05-24 00:17:43.6436|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Home'. 
+2023-05-24 00:17:43.6436|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Home/Index.cshtml'. 
+2023-05-24 00:17:43.6436|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_ViewStart.cshtml'. 
+2023-05-24 00:17:43.6436|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2023-05-24 00:17:43.6436|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2023-05-24 00:17:43.6436|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2023-05-24 00:17:43.6436|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 5.6558ms. 
+2023-05-24 00:17:43.6984|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Home'. 
+2023-05-24 00:17:43.6984|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_Layout.cshtml'. 
+2023-05-24 00:17:43.6984|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2023-05-24 00:17:43.7431|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7431|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-05-24 00:17:43.7431|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-05-24 00:17:43.7431|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_LoginPartial' in controller 'Home'. 
+2023-05-24 00:17:43.7431|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_LoginPartial.cshtml'. 
+2023-05-24 00:17:43.7431|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_LoginPartial.cshtml'. 
+2023-05-24 00:17:43.7595|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Page: /Account/Manage/Index, Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7595|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template Identity/Account/Manage for Page: /Account/Manage/Index resulting in /Identity/Account/Manage and  
+2023-05-24 00:17:43.7595|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Page: /Account/Manage/Index, Route: {controller=Home}/{action=Index}/{id?} with result /Identity/Account/Manage 
+2023-05-24 00:17:43.7595|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7595|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-05-24 00:17:43.7595|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-05-24 00:17:43.7595|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Page: /Account/Logout, Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7595|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template Identity/Account/Logout for Page: /Account/Logout resulting in /Identity/Account/Logout and ?returnUrl=%2F 
+2023-05-24 00:17:43.7595|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Page: /Account/Logout, Route: {controller=Home}/{action=Index}/{id?} with result /Identity/Account/Logout?returnUrl=%2F 
+2023-05-24 00:17:43.7595|31|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2023-05-24 00:17:43.7595|31|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2023-05-24 00:17:43.7595|5|DEBUG|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|A new antiforgery cookie token was created. 
+2023-05-24 00:17:43.7707|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7707|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-05-24 00:17:43.7707|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-05-24 00:17:43.7707|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7707|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-05-24 00:17:43.7707|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-05-24 00:17:43.7707|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7707|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products and  
+2023-05-24 00:17:43.7707|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products 
+2023-05-24 00:17:43.7707|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7707|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Register and  
+2023-05-24 00:17:43.7707|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Register 
+2023-05-24 00:17:43.7707|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7707|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and  
+2023-05-24 00:17:43.7707|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Login 
+2023-05-24 00:17:43.7707|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7707|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /ShoppingCart and  
+2023-05-24 00:17:43.7707|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /ShoppingCart 
+2023-05-24 00:17:43.7707|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:17:43.7707|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-05-24 00:17:43.7707|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-05-24 00:17:43.9160|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 269.7046ms. 
+2023-05-24 00:17:43.9160|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-05-24 00:17:43.9160|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:17:43.9160|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:17:43.9160|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:17:43.9160|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:17:43.9160|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EShop.Web3.Controllers.HomeController.Index (EShop.Web3) in 470.2835ms 
+2023-05-24 00:17:43.9160|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-05-24 00:17:43.9487|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-05-24 00:17:43.9565|31|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2023-05-24 00:17:43.9565|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-05-24 00:17:43.9793|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2023-05-24 00:17:43.9793|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3516.8137ms 200 text/html; charset=utf-8 
+2023-05-24 00:17:44.0347|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_framework/aspnetcore-browser-refresh.js   
+2023-05-24 00:17:44.0347|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3.9512ms 200 application/javascript; charset=utf-8 
+2023-05-24 00:17:44.0704|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_vs/browserLink   
+2023-05-24 00:17:44.1739|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 103.5841ms 200 text/javascript; charset=UTF-8 
+2023-05-24 00:28:45.5264|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/   
+2023-05-24 00:28:45.6297|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-05-24 00:28:45.6297|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type 
+2023-05-24 00:28:45.6456|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/' 
+2023-05-24 00:28:45.6456|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2023-05-24 00:28:45.6456|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-05-24 00:28:45.7129|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2023-05-24 00:28:45.7593|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2023-05-24 00:28:45.7593|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-05-24 00:28:45.7862|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller EShop.Web3.Controllers.HomeController (EShop.Web3). 
+2023-05-24 00:28:45.7862|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-05-24 00:28:45.7862|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-05-24 00:28:45.7862|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-05-24 00:28:45.7862|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-05-24 00:28:45.7862|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2023-05-24 00:28:45.7862|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:28:45.7862|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:28:45.7862|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EShop.Web3.Controllers.HomeController (EShop.Web3) 
+2023-05-24 00:28:45.7862|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EShop.Web3.Controllers.HomeController (EShop.Web3) 
+2023-05-24 00:28:45.7862|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-05-24 00:28:45.7862|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-05-24 00:28:45.7862|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-05-24 00:28:46.0047|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EShop.Web3.Controllers.HomeController.Index (EShop.Web3) - Validation state: Valid 
+2023-05-24 00:28:46.0047|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EShop.Web3.Controllers.HomeController.Index (EShop.Web3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.7493ms. 
+2023-05-24 00:28:46.0047|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-05-24 00:28:46.0047|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-05-24 00:28:46.0047|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2023-05-24 00:28:46.0047|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:28:46.0047|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:28:46.0047|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-05-24 00:28:46.0269|2|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'Index' in controller 'Home'. 
+2023-05-24 00:28:46.0269|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2023-05-24 00:28:46.0269|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 18.0357ms. 
+2023-05-24 00:28:46.0396|2|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_Layout' in controller 'Home'. 
+2023-05-24 00:28:46.0546|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0546|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-05-24 00:28:46.0546|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-05-24 00:28:46.0546|2|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_LoginPartial' in controller 'Home'. 
+2023-05-24 00:28:46.0546|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Page: /Account/Manage/Index, Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0546|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template Identity/Account/Manage for Page: /Account/Manage/Index resulting in /Identity/Account/Manage and  
+2023-05-24 00:28:46.0546|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Page: /Account/Manage/Index, Route: {controller=Home}/{action=Index}/{id?} with result /Identity/Account/Manage 
+2023-05-24 00:28:46.0546|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0546|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-05-24 00:28:46.0546|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-05-24 00:28:46.0714|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Page: /Account/Logout, Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0714|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template Identity/Account/Logout for Page: /Account/Logout resulting in /Identity/Account/Logout and ?returnUrl=%2F 
+2023-05-24 00:28:46.0714|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Page: /Account/Logout, Route: {controller=Home}/{action=Index}/{id?} with result /Identity/Account/Logout?returnUrl=%2F 
+2023-05-24 00:28:46.0714|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2023-05-24 00:28:46.0714|31|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {be231315-ee46-41e4-a449-20a719ad4ee7} with purposes ('C:\Users\Savo\Desktop\IS\EShopApplication2\EShop.Web3', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2023-05-24 00:28:46.0714|6|DEBUG|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An antiforgery cookie token was reused. 
+2023-05-24 00:28:46.0714|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0714|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2023-05-24 00:28:46.0714|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2023-05-24 00:28:46.0714|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0714|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-05-24 00:28:46.0714|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-05-24 00:28:46.0714|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0714|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Products and  
+2023-05-24 00:28:46.0714|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Products 
+2023-05-24 00:28:46.0714|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0714|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Register and  
+2023-05-24 00:28:46.0714|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Register 
+2023-05-24 00:28:46.0714|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0714|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and  
+2023-05-24 00:28:46.0714|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Login 
+2023-05-24 00:28:46.0714|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0714|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /ShoppingCart and  
+2023-05-24 00:28:46.0714|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /ShoppingCart 
+2023-05-24 00:28:46.0714|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2023-05-24 00:28:46.0714|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2023-05-24 00:28:46.0714|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2023-05-24 00:28:46.1220|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 113.1256ms. 
+2023-05-24 00:28:46.1220|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2023-05-24 00:28:46.1220|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:28:46.1220|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:28:46.1220|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:28:46.1220|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2023-05-24 00:28:46.1220|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EShop.Web3.Controllers.HomeController.Index (EShop.Web3) in 334.2388ms 
+2023-05-24 00:28:46.1220|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EShop.Web3.Controllers.HomeController.Index (EShop.Web3)' 
+2023-05-24 00:28:46.1299|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-05-24 00:28:46.1299|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-05-24 00:28:46.1299|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 614.3539ms 200 text/html; charset=utf-8 
+2023-05-24 00:28:46.1919|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_framework/aspnetcore-browser-refresh.js   
+2023-05-24 00:28:46.1919|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1.1318ms 200 application/javascript; charset=utf-8 
+2023-05-24 00:28:46.4234|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44360/_vs/browserLink   
+2023-05-24 00:28:46.4618|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 38.5108ms 200 text/javascript; charset=UTF-8 
+2023-05-24 11:46:59.3398|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2023-05-24 11:46:59.6415|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2023-05-24 11:46:59.6440|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2023-05-24 11:46:59.7171|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2023-05-24 11:46:59.7581|20400|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'ShopDb3' on server 'KOSTADINOV-MSSQLSERVER01'. 
+2023-05-24 11:46:59.7581|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV-MSSQLSERVER01'. 
+2023-05-24 11:47:15.5593|20004|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'ShopDb3' on server 'KOSTADINOV-MSSQLSERVER01'. 
+2023-05-24 11:47:15.5593|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2023-05-24 11:51:17.0924|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2023-05-24 11:51:17.4064|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2023-05-24 11:51:17.4064|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2023-05-24 11:51:17.4812|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2023-05-24 11:51:17.5238|20400|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.5238|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.6894|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.6933|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.6933|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (2ms). 
+2023-05-24 11:51:17.6933|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-05-24 11:51:17.7154|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-05-24 11:51:17.7154|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7154|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7154|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2023-05-24 11:51:17.7154|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2023-05-24 11:51:17.7154|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7154|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7154|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-05-24 11:51:17.7316|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-05-24 11:51:17.7316|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7316|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7316|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7316|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7316|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.7316|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.7316|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-05-24 11:51:17.7316|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-05-24 11:51:17.7316|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7316|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7814|10800|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ApplicationDbContext'. 
+2023-05-24 11:51:17.7814|10801|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ApplicationDbContext'. 
+2023-05-24 11:51:17.7916|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.7916|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.7916|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7916|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7916|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+2023-05-24 11:51:17.7916|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+2023-05-24 11:51:17.7916|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7916|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.7999|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.7999|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-05-24 11:51:17.7999|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-05-24 11:51:17.7999|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2023-05-24 11:51:17.7999|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2023-05-24 11:51:17.7999|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-05-24 11:51:17.7999|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-05-24 11:51:17.7999|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-05-24 11:51:17.7999|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2023-05-24 11:51:17.7999|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2023-05-24 11:51:17.7999|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2023-05-24 11:51:17.7999|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-05-24 11:51:17.7999|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.7999|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.8191|20402|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20230323233246_InitialMigration'. 
+2023-05-24 11:51:17.8486|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.8486|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.8486|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2023-05-24 11:51:17.8486|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2023-05-24 11:51:17.8486|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8486|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8486|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+); 
+2023-05-24 11:51:17.8486|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+); 
+2023-05-24 11:51:17.8486|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8486|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8486|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    [FirstName] nvarchar(max) NULL,
+    [LastName] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+); 
+2023-05-24 11:51:17.8486|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    [FirstName] nvarchar(max) NULL,
+    [LastName] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+); 
+2023-05-24 11:51:17.8486|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8486|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8486|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] uniqueidentifier NOT NULL,
+    [ProductName] nvarchar(max) NULL,
+    [ProductImage] nvarchar(max) NULL,
+    [ProductDescription] nvarchar(max) NULL,
+    [ProductPrice] int NOT NULL,
+    [Rating] int NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id])
+); 
+2023-05-24 11:51:17.8626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] uniqueidentifier NOT NULL,
+    [ProductName] nvarchar(max) NULL,
+    [ProductImage] nvarchar(max) NULL,
+    [ProductDescription] nvarchar(max) NULL,
+    [ProductPrice] int NOT NULL,
+    [Rating] int NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id])
+); 
+2023-05-24 11:51:17.8626|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8626|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8626|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8626|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8626|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8626|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8626|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(128) NOT NULL,
+    [ProviderKey] nvarchar(128) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(128) NOT NULL,
+    [ProviderKey] nvarchar(128) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8626|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8626|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8626|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8626|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(128) NOT NULL,
+    [Name] nvarchar(128) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(128) NOT NULL,
+    [Name] nvarchar(128) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8626|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8626|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8626|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Order] (
+    [Id] uniqueidentifier NOT NULL,
+    [UserId] nvarchar(450) NULL,
+    CONSTRAINT [PK_Order] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Order_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION
+); 
+2023-05-24 11:51:17.8626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Order] (
+    [Id] uniqueidentifier NOT NULL,
+    [UserId] nvarchar(450) NULL,
+    CONSTRAINT [PK_Order] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Order_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION
+); 
+2023-05-24 11:51:17.8626|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8626|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8626|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ShoppingCarts] (
+    [Id] uniqueidentifier NOT NULL,
+    [OwnerId] nvarchar(450) NULL,
+    CONSTRAINT [PK_ShoppingCarts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ShoppingCarts_AspNetUsers_OwnerId] FOREIGN KEY ([OwnerId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION
+); 
+2023-05-24 11:51:17.8626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ShoppingCarts] (
+    [Id] uniqueidentifier NOT NULL,
+    [OwnerId] nvarchar(450) NULL,
+    CONSTRAINT [PK_ShoppingCarts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ShoppingCarts_AspNetUsers_OwnerId] FOREIGN KEY ([OwnerId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION
+); 
+2023-05-24 11:51:17.8626|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8626|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8626|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ProductInOrder] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [OrderId] uniqueidentifier NOT NULL,
+    [Id] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_ProductInOrder] PRIMARY KEY ([ProductId], [OrderId]),
+    CONSTRAINT [FK_ProductInOrder_Order_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Order] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductInOrder_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ProductInOrder] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [OrderId] uniqueidentifier NOT NULL,
+    [Id] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_ProductInOrder] PRIMARY KEY ([ProductId], [OrderId]),
+    CONSTRAINT [FK_ProductInOrder_Order_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Order] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductInOrder_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ProductInShoppingCarts] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [ShoppingCartId] uniqueidentifier NOT NULL,
+    [Id] uniqueidentifier NOT NULL,
+    [Quantity] int NOT NULL,
+    CONSTRAINT [PK_ProductInShoppingCarts] PRIMARY KEY ([ProductId], [ShoppingCartId]),
+    CONSTRAINT [FK_ProductInShoppingCarts_ShoppingCarts_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [ShoppingCarts] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductInShoppingCarts_Products_ShoppingCartId] FOREIGN KEY ([ShoppingCartId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ProductInShoppingCarts] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [ShoppingCartId] uniqueidentifier NOT NULL,
+    [Id] uniqueidentifier NOT NULL,
+    [Quantity] int NOT NULL,
+    CONSTRAINT [PK_ProductInShoppingCarts] PRIMARY KEY ([ProductId], [ShoppingCartId]),
+    CONSTRAINT [FK_ProductInShoppingCarts_ShoppingCarts_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [ShoppingCarts] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductInShoppingCarts_Products_ShoppingCartId] FOREIGN KEY ([ShoppingCartId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL; 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL; 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL; 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL; 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Order_UserId] ON [Order] ([UserId]); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Order_UserId] ON [Order] ([UserId]); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ProductInOrder_OrderId] ON [ProductInOrder] ([OrderId]); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ProductInOrder_OrderId] ON [ProductInOrder] ([OrderId]); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ProductInShoppingCarts_ShoppingCartId] ON [ProductInShoppingCarts] ([ShoppingCartId]); 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ProductInShoppingCarts_ShoppingCartId] ON [ProductInShoppingCarts] ([ShoppingCartId]); 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_ShoppingCarts_OwnerId] ON [ShoppingCarts] ([OwnerId]) WHERE [OwnerId] IS NOT NULL; 
+2023-05-24 11:51:17.8775|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_ShoppingCarts_OwnerId] ON [ShoppingCarts] ([OwnerId]) WHERE [OwnerId] IS NOT NULL; 
+2023-05-24 11:51:17.8775|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8775|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8775|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230323233246_InitialMigration', N'3.1.32'); 
+2023-05-24 11:51:17.8936|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230323233246_InitialMigration', N'3.1.32'); 
+2023-05-24 11:51:17.8936|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-05-24 11:51:17.8936|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-05-24 11:51:17.8936|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2023-05-24 11:51:17.8936|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.8936|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.8936|20402|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20230327090104_SecondMigration'. 
+2023-05-24 11:51:17.8936|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.8936|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.8936|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2023-05-24 11:51:17.8936|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2023-05-24 11:51:17.8936|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.8936|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.8936|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInShoppingCarts] DROP CONSTRAINT [PK_ProductInShoppingCarts]; 
+2023-05-24 11:51:17.9154|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInShoppingCarts] DROP CONSTRAINT [PK_ProductInShoppingCarts]; 
+2023-05-24 11:51:17.9154|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9154|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9154|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] DROP CONSTRAINT [PK_ProductInOrder]; 
+2023-05-24 11:51:17.9154|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] DROP CONSTRAINT [PK_ProductInOrder]; 
+2023-05-24 11:51:17.9154|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9154|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9154|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInShoppingCarts] ADD CONSTRAINT [PK_ProductInShoppingCarts] PRIMARY KEY ([Id]); 
+2023-05-24 11:51:17.9154|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInShoppingCarts] ADD CONSTRAINT [PK_ProductInShoppingCarts] PRIMARY KEY ([Id]); 
+2023-05-24 11:51:17.9154|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9154|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9154|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] ADD CONSTRAINT [PK_ProductInOrder] PRIMARY KEY ([Id]); 
+2023-05-24 11:51:17.9154|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] ADD CONSTRAINT [PK_ProductInOrder] PRIMARY KEY ([Id]); 
+2023-05-24 11:51:17.9154|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9154|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9154|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ProductInShoppingCarts_ProductId] ON [ProductInShoppingCarts] ([ProductId]); 
+2023-05-24 11:51:17.9154|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ProductInShoppingCarts_ProductId] ON [ProductInShoppingCarts] ([ProductId]); 
+2023-05-24 11:51:17.9154|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9154|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9154|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ProductInOrder_ProductId] ON [ProductInOrder] ([ProductId]); 
+2023-05-24 11:51:17.9154|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ProductInOrder_ProductId] ON [ProductInOrder] ([ProductId]); 
+2023-05-24 11:51:17.9154|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9154|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9154|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230327090104_SecondMigration', N'3.1.32'); 
+2023-05-24 11:51:17.9154|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230327090104_SecondMigration', N'3.1.32'); 
+2023-05-24 11:51:17.9154|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-05-24 11:51:17.9244|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-05-24 11:51:17.9244|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2023-05-24 11:51:17.9244|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.9244|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.9244|20402|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20230503210756_UpdateProductInOrderModel'. 
+2023-05-24 11:51:17.9244|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.9244|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.9244|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2023-05-24 11:51:17.9244|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2023-05-24 11:51:17.9244|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9244|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9244|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] ADD [Quantity] int NOT NULL DEFAULT 0; 
+2023-05-24 11:51:17.9244|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] ADD [Quantity] int NOT NULL DEFAULT 0; 
+2023-05-24 11:51:17.9244|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9244|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9244|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230503210756_UpdateProductInOrderModel', N'3.1.32'); 
+2023-05-24 11:51:17.9244|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230503210756_UpdateProductInOrderModel', N'3.1.32'); 
+2023-05-24 11:51:17.9244|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-05-24 11:51:17.9244|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-05-24 11:51:17.9244|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2023-05-24 11:51:17.9244|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.9244|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.9244|20402|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20230513084645_AddedEmailModel'. 
+2023-05-24 11:51:17.9432|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.9432|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:17.9432|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2023-05-24 11:51:17.9432|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2023-05-24 11:51:17.9432|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9432|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9432|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Order] DROP CONSTRAINT [FK_Order_AspNetUsers_UserId]; 
+2023-05-24 11:51:17.9432|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Order] DROP CONSTRAINT [FK_Order_AspNetUsers_UserId]; 
+2023-05-24 11:51:17.9432|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9432|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9432|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] DROP CONSTRAINT [FK_ProductInOrder_Order_OrderId]; 
+2023-05-24 11:51:17.9432|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] DROP CONSTRAINT [FK_ProductInOrder_Order_OrderId]; 
+2023-05-24 11:51:17.9432|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9432|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9432|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] DROP CONSTRAINT [FK_ProductInOrder_Products_ProductId]; 
+2023-05-24 11:51:17.9432|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] DROP CONSTRAINT [FK_ProductInOrder_Products_ProductId]; 
+2023-05-24 11:51:17.9432|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9432|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9432|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] DROP CONSTRAINT [PK_ProductInOrder]; 
+2023-05-24 11:51:17.9432|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrder] DROP CONSTRAINT [PK_ProductInOrder]; 
+2023-05-24 11:51:17.9432|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9432|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9432|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Order] DROP CONSTRAINT [PK_Order]; 
+2023-05-24 11:51:17.9432|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Order] DROP CONSTRAINT [PK_Order]; 
+2023-05-24 11:51:17.9432|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:17.9432|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:17.9432|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[ProductInOrder]', N'ProductInOrders'; 
+2023-05-24 11:51:18.1869|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (235ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[ProductInOrder]', N'ProductInOrders'; 
+2023-05-24 11:51:18.1869|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1869|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1869|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[Order]', N'Orders'; 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[Order]', N'Orders'; 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[ProductInOrders].[IX_ProductInOrder_ProductId]', N'IX_ProductInOrders_ProductId', N'INDEX'; 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[ProductInOrders].[IX_ProductInOrder_ProductId]', N'IX_ProductInOrders_ProductId', N'INDEX'; 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[ProductInOrders].[IX_ProductInOrder_OrderId]', N'IX_ProductInOrders_OrderId', N'INDEX'; 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[ProductInOrders].[IX_ProductInOrder_OrderId]', N'IX_ProductInOrders_OrderId', N'INDEX'; 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[Orders].[IX_Order_UserId]', N'IX_Orders_UserId', N'INDEX'; 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[Orders].[IX_Order_UserId]', N'IX_Orders_UserId', N'INDEX'; 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrders] ADD CONSTRAINT [PK_ProductInOrders] PRIMARY KEY ([Id]); 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrders] ADD CONSTRAINT [PK_ProductInOrders] PRIMARY KEY ([Id]); 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Orders] ADD CONSTRAINT [PK_Orders] PRIMARY KEY ([Id]); 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Orders] ADD CONSTRAINT [PK_Orders] PRIMARY KEY ([Id]); 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [EmailMessages] (
+    [Id] uniqueidentifier NOT NULL,
+    [MailTo] nvarchar(max) NULL,
+    [Subject] nvarchar(max) NULL,
+    [Content] nvarchar(max) NULL,
+    [Status] bit NOT NULL,
+    CONSTRAINT [PK_EmailMessages] PRIMARY KEY ([Id])
+); 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [EmailMessages] (
+    [Id] uniqueidentifier NOT NULL,
+    [MailTo] nvarchar(max) NULL,
+    [Subject] nvarchar(max) NULL,
+    [Content] nvarchar(max) NULL,
+    [Status] bit NOT NULL,
+    CONSTRAINT [PK_EmailMessages] PRIMARY KEY ([Id])
+); 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Orders] ADD CONSTRAINT [FK_Orders_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION; 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Orders] ADD CONSTRAINT [FK_Orders_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION; 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrders] ADD CONSTRAINT [FK_ProductInOrders_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([Id]) ON DELETE CASCADE; 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrders] ADD CONSTRAINT [FK_ProductInOrders_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([Id]) ON DELETE CASCADE; 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrders] ADD CONSTRAINT [FK_ProductInOrders_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE; 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ProductInOrders] ADD CONSTRAINT [FK_ProductInOrders_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE; 
+2023-05-24 11:51:18.1902|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2023-05-24 11:51:18.1902|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2023-05-24 11:51:18.1902|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230513084645_AddedEmailModel', N'3.1.32'); 
+2023-05-24 11:51:18.1902|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230513084645_AddedEmailModel', N'3.1.32'); 
+2023-05-24 11:51:18.1902|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-05-24 11:51:18.1902|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2023-05-24 11:51:18.1902|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2023-05-24 11:51:18.1902|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:18.1902|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDb3' on server 'KOSTADINOV'. 
+2023-05-24 11:51:18.1902|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
